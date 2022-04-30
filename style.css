@@ -1,0 +1,217 @@
+h1 {
+  text-align: center;
+}
+h5 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  color: rgb(17 24 39);
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+body {
+  background-color: rgb(223, 234, 238);
+}
+
+.button-nav {
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.5rem;
+  color: #857c7c;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+#game-board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hint {
+  height: 3rem;
+  width: 4rem;
+  color: black;
+  justify-content: center;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.equation-box {
+  border: 2px solid gray;
+  border-radius: 3px;
+  margin: 2px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.filled-box {
+  border: 2px solid black;
+}
+
+.equation-row {
+  display: flex;
+}
+
+#keyboard-cont {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#keyboard-cont div {
+  display: flex;
+}
+
+.second-row {
+  margin: 0.5rem 0;
+}
+
+.keyboard-button {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  margin: 0 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.enter-button {
+  width: 15rem;
+  height: 2rem;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.keyboard-button:hover {
+  color: #fff;
+  background-color: #5a6268;
+}
+
+.dark-mode {
+  background-color: #0d1117;
+  color: white;
+}
+
+.modal-info-global {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-info-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+
+.close-info-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-info-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.text-how-play {
+  font-family: BCSans, Noto Sans, sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.infos-div-modal {
+  justify-content: center;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.info-style {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-style: solid;
+  border-width: 2px;
+  align-items: center;
+  display: flex;
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+  justify-content: center;
+  border-radius: 0.25rem;
+  border-color: gray;
+  background-color: gray;
+}
+
+.stats-item {
+  align-items: center;
+  width: 25%;
+  justify-content: center;
+  margin: 0.25rem;
+}
+
+.stats-var {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: black;
+}
+
+.stats-text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1rem;
+  color: black;
+}

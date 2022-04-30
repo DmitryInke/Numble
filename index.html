@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" type="module"></script>
+    <title>Numble</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <h1 style="font-size: 2.5rem; margin-bottom: 0">
+        <button class="button-nav" id="info">ⓘ</button>
+        <button class="button-nav" id="reset">⟳</button
+        >&nbsp;&nbsp;&nbsp;NUMBLE&nbsp;
+        <button class="button-nav" id="stats">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="grey"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M16,11V3H8v6H2v12h20V11H16z M10,5h4v14h-4V5z M4,11h4v8H4V11z M20,19h-4v-6h4V19z"
+            ></path>
+          </svg>
+        </button>
+        <button id="dark-mode" class="button-nav button-lg">☽</button>
+      </h1>
+      <hr
+        style="
+          width: 27rem;
+          margin-top: 10px;
+          margin-bottom: 5px;
+          align-items: center;
+        "
+      />
+    </div>
+
+    <div class="modal-info-global">
+      <div class="modal-info-content">
+        <span class="close-info-button">&times;</span>
+        <div id="info-modal"></div>
+      </div>
+    </div>
+
+    <div class="modal-info-global" id="modal-stats-global">
+      <div class="modal-info-content" id="stats-content">
+        <span class="close-info-button" id="stats-close">&times;</span>
+        <div id="stats-modal"></div>
+      </div>
+    </div>
+
+    <div id="game-board"></div>
+
+    <div id="keyboard-cont">
+      <!-- <div class="hint">= 1</div> -->
+      <div class="first-row">
+        <button class="keyboard-button">1</button>
+        <button class="keyboard-button">2</button>
+        <button class="keyboard-button">3</button>
+        <button class="keyboard-button">4</button>
+        <button class="keyboard-button">5</button>
+      </div>
+      <div class="second-row">
+        <button class="keyboard-button">6</button>
+        <button class="keyboard-button">7</button>
+        <button class="keyboard-button">8</button>
+        <button class="keyboard-button">9</button>
+        <button class="keyboard-button">0</button>
+      </div>
+      <div class="third-row">
+        <button class="keyboard-button">Del</button>
+        <button class="keyboard-button">+</button>
+        <button class="keyboard-button">-</button>
+        <button class="keyboard-button">/</button>
+        <button class="keyboard-button">*</button>
+      </div>
+      <div class="fourth-row">
+        <button class="keyboard-button enter-button">Enter</button>
+      </div>
+    </div>
+    <footer>
+      <p>&copy Dmitry & Ben</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  </body>
+</html>
